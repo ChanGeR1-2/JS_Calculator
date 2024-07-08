@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Light", "Ariel", sans-serif;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: black 5px solid;
+    flex: 0 0 400px;
+    padding: 5px;
+    background-color: black;
+}
+
+.display {
+    flex: 1 1 100%;
+    font-size: 75px;
+    border: black 5px solid;
+    text-align: right;
+    background-color: lightgray;
+}
+
+.bottom-buttons {
+    display: flex;
+    gap: 2px;
+}
+
+.bottom-buttons > * {
+    box-sizing: inherit;
+    border-radius: 10px;
+}
+
+#zero-button {
+    flex: 1 1 50%;
+}
+
+#equals-button,
+#point-button {
+    flex: 1 1 23%;
+}
+
+.buttons {
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.buttons > * {
+    border-radius: 10px;
+    box-sizing: inherit;
+    flex: 1 1 20%;
+    height: 75px;
+}
+
+button:hover {
+    opacity: 90%;
+}
+button:active {
+    filter: brightness(150%);
+}
+
+.number-button,
+#point-button {
+    background-color: #489439;
+}
+
+.sign-button {
+    background-color: #d49850;
+}
+
+.util-button {
+    background-color: #f2ec3f;
+}
+
+#equals-button {
+    background-color: crimson;
+}
