@@ -7,12 +7,15 @@
 </head>
 <body>
   <div class="container">
-    <div class="display">0</div>
+    <div class="display">
+      <div id="top-display"><span></span></div>
+      <div id="bottom-display">0</div>
+    </div>
     <div class="buttons">
       <button class="util-button" id="reset-button">AC</button>
       <button class="util-button" id="change-sign-button">+/-</button>
-      <button class="util-button" id="fraction-button">%</button>
-      <button class="sign-button">/</button>
+      <button class="util-button" id="back-button">BACK</button>
+      <button id="equals-button">=</button>
       <button class="number-button">7</button>
       <button class="number-button">8</button>
       <button class="number-button">9</button>
@@ -24,11 +27,11 @@
       <button class="number-button">1</button>
       <button class="number-button">2</button>
       <button class="number-button">3</button>
-      <button class="sign-button">+</button>
+      <button class="sign-button">/</button>
       <div class="bottom-buttons">
         <button id="zero-button" class="number-button">0</button>
         <button id="point-button">.</button>
-        <button id="equals-button">=</button>
+        <button class="sign-button" id="plus">+</button>
       </div>
     </div>
   </div>

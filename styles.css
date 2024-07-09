@@ -11,6 +11,12 @@ body {
     background-color: lightgray;
 }
 
+input[type=text] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -23,10 +29,32 @@ body {
 
 .display {
     flex: 1 1 100%;
-    font-size: 75px;
     border: black 5px solid;
-    text-align: right;
     background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+.display * {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#top-display {
+    position: relative;
+    flex: 1 1 30px;
+}
+
+#top-display span {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+#bottom-display {
+    font-size: 75px;
+    flex: 1 1 70%;
+    text-align: right;
 }
 
 .bottom-buttons {
@@ -43,7 +71,7 @@ body {
     flex: 1 1 50%;
 }
 
-#equals-button,
+#plus,
 #point-button {
     flex: 1 1 23%;
 }
